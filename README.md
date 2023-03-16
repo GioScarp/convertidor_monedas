@@ -40,13 +40,13 @@ Como desafío extra te animamos a que dejes fluir tu creatividad, si puedo conve
 * Texto informativos a medida de que el usuario interactua con la app
 # Pasos de instalación
 ### Ejecutable JAR
-1. Descargue el release del proyecto o directamente de [aquí]()
-2. Descomprima el archivo zip
-3. Ejecute el archivo extraido Jar Conversor_Moneda.jar y disfrute
+1. Clonar el repositorio
+2. Ejecutar el Jar (convertidor_moneda.jar) que se encuentra en la carpeta raiz del proyecto
+3. Disfrute de la aplicación
 ### Intellij IDEA
 1. Clonar el repositorio
 2. Abir proyecto en Intellij
-3. Run main y disfrutar
+3. Run main y disfrutar la aplicación
 
 # Proceso
 ### Tecnologías usadas
