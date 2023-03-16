@@ -19,11 +19,11 @@ public class MainMenu extends JFrame{
     public MainMenu(){
         this.setLocationRelativeTo(null);
         setIconos();
-        setTitle("Conversor Multiple");
+        setTitle("Conversor Múltiple");
         setContentPane(MainPanel);
         setMinimumSize(new Dimension(550, 474));
         setLocationRelativeTo(this);
-        JLabelTitulo.setText("CONVERTIDOR MULTIPLE");
+        JLabelTitulo.setText("CONVERTIDOR MÚLTIPLE");
         JLabelFooter.setText("<html> Copyright © 2023 | Coded with <font color='blue'>❤</font> by <font color='blue'>Giovanni Scarpetta</font></html>");
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

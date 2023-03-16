@@ -9,6 +9,10 @@ public class Temperatura {
     private String nombre;
     private ImageIcon icon;
 
+    public Temperatura(){
+
+    }
+
     public Temperatura(double temperatura, String simbolo, String nombre, ImageIcon icon) {
         this.temperatura = temperatura;
         this.simbolo = simbolo;
