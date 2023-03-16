@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Gio_Challenge.Vista.ConvertidorMonedas">
-  <grid id="27dc6" binding="JPanelMoneda" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="JPanelMoneda" layout-manager="GridLayoutManager" row-count="8" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="458" height="502"/>
+      <xy x="20" y="20" width="521" height="551"/>
     </constraints>
     <properties>
       <background color="-1"/>
@@ -15,54 +15,64 @@
     <children>
       <component id="44c52" class="javax.swing.JLabel" binding="JLabelTitulo">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Segoe UI Black" size="28" style="0"/>
-          <text value="Convertidor Monedas"/>
+          <foreground color="-11513776"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="22b6b" class="javax.swing.JTextField" binding="textFieldImporte">
+      <component id="22b6b" class="javax.swing.JTextField" binding="textFieldValor">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="200" height="-1"/>
-          </grid>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1"/>
           <caretColor color="-16757761"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <focusable value="true"/>
           <font name="Segoe UI" size="36" style="1"/>
-          <foreground color="-16757761"/>
+          <foreground color="-1250068"/>
+          <horizontalAlignment value="0"/>
+          <nextFocusableComponent value="a9d61"/>
+          <opaque value="true"/>
+          <requestFocusEnabled value="true"/>
           <selectedTextColor color="-6568747"/>
-          <text value="500.0"/>
+          <text value="Ingrese un valor"/>
+          <toolTipText value=""/>
+          <verifyInputWhenFocusTarget value="true"/>
         </properties>
       </component>
-      <component id="61ccf" class="javax.swing.JLabel" binding="JLabelImporte">
+      <component id="61ccf" class="javax.swing.JLabel" binding="JLabelInfo">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Segoe UI" size="14" style="1"/>
-          <text value="Importe"/>
+          <foreground color="-11513776"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Solo valores numéricos"/>
         </properties>
       </component>
       <component id="a9d61" class="javax.swing.JComboBox" binding="comboBoxBase">
         <constraints>
-          <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1"/>
           <font name="Segoe UI" size="16" style="0"/>
           <foreground color="-16382458"/>
-          <model>
-            <item value="USD"/>
-            <item value="EUR"/>
-          </model>
+          <model/>
         </properties>
       </component>
       <component id="29484" class="javax.swing.JComboBox" binding="comboBoxDestino">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1"/>
@@ -72,7 +82,7 @@
       </component>
       <component id="ff346" class="javax.swing.JButton" binding="btnConvertir">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-16757761"/>
@@ -80,55 +90,82 @@
           <contentAreaFilled value="true"/>
           <font name="Segoe UI" size="14" style="1"/>
           <foreground color="-1"/>
+          <horizontalTextPosition value="11"/>
           <margin top="0" left="0" bottom="0" right="0"/>
           <requestFocusEnabled value="true"/>
-          <rolloverEnabled value="false"/>
+          <rolloverEnabled value="true"/>
           <selected value="false"/>
           <text value="Convertir"/>
         </properties>
       </component>
       <component id="676d7" class="javax.swing.JLabel" binding="JLabelResultado">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <font name="Segoe UI" size="14" style="1"/>
-          <text value="a"/>
-        </properties>
-      </component>
-      <hspacer id="98b17">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
-      <hspacer id="95646">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
-      <component id="f930b" class="javax.swing.JLabel" binding="JLabelIconDestino">
-        <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Segoe UI" size="14" style="1"/>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="cb364" class="javax.swing.JLabel" binding="JLabelIconBase">
-        <constraints>
-          <grid row="3" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Segoe UI" size="14" style="1"/>
-          <text value="Label"/>
+          <alignmentX value="0.0"/>
+          <font name="Segoe UI Black" size="20" style="1"/>
+          <foreground color="-16757761"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="fae5c" class="javax.swing.JLabel">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7f4fd" class="javax.swing.JLabel" binding="JLabelnvertir">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="20c76">
+        <constraints>
+          <grid row="0" column="4" row-span="8" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="85e6b">
+        <constraints>
+          <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="1dfbc" class="javax.swing.JLabel" binding="JLabeltitleIcono">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="cb364" class="javax.swing.JLabel" binding="JLabelIconBase">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="14" style="1"/>
+          <opaque value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f930b" class="javax.swing.JLabel" binding="JLabelIconDestino">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="14" style="1"/>
           <text value=""/>
         </properties>
       </component>
